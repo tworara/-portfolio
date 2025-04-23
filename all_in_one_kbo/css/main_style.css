@@ -1,0 +1,808 @@
+@charset "utf-8";
+
+/* main_visual */
+
+
+.main_visual {
+    width: 100%;
+    height: 916px;
+    /* height: 1152px; */
+    position: relative;
+    overflow: hidden;
+}
+
+/* banner */
+
+.main_visual .banner {
+    width: 100%;
+    height: 100%;
+
+}
+
+.main_visual .banner ul.slide {
+    width: 900%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    display: flex;
+}
+
+.main_visual .banner ul.slide li {
+    width: 100%;
+    height: 100%;
+}
+
+.main_visual .banner ul.slide li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .main_visual .banner ul.slide li .main_txt {
+    position: absolute;
+    left: 500px;
+    top: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.main_visual .banner ul.slide li .main_txt p.banner_txt {
+    color: var(--main_red);
+    font-size: 5rem;
+    letter-spacing: -2px;
+    text-align: right;
+    font-weight: 600;
+}
+
+.main_visual .banner ul.slide li .main_txt p {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.main_visual .banner ul.slide li .main_txt p span {
+    font-weight: 200;
+} */
+
+
+.main_visual .banner ul.slide li:nth-child(1) {}
+
+.main_visual .banner ul.slide li:nth-child(2) {}
+
+.main_visual .banner ul.slide li:nth-child(3) {}
+
+.main_visual .banner ul.slide li:nth-child(4) {}
+
+.main_visual .banner ul.slide li:nth-child(5) {}
+
+.main_visual .banner ul.slide li:nth-child(6) {}
+
+.main_visual .banner ul.slide li:nth-child(7) {}
+
+.main_visual .banner ul.slide li:nth-child(8) {}
+
+.main_visual .banner ul.slide li:nth-child(9) {}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+   color: var(--main_red);
+}
+
+/* score */
+
+.main_visual .score {
+    width: 100%;
+    height: 236px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    overflow: hidden;
+}
+
+.main_visual .score ul.home {
+    width: 100%;
+    text-align: center;
+    font-family: 'Pretendard-Regular';
+    display: flex;
+   
+}
+
+.main_visual .score ul.home li {
+    width: 482px;
+    height: 150px;
+    background: #fff;
+    border-radius: 240px;
+    padding: 20px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    opacity: .4;
+    transition: .5s;
+    flex-shrink: 0;
+}
+.main_visual .score ul.home li:nth-child(3){
+    /* opacity: 1; */
+}
+.main_visual .score ul.home li.swiper-slide-thumb-active
+ {
+    opacity: 1;
+}
+
+
+.main_visual .score ul.home li .score_top {
+    color: var(--main_blue);
+    
+}
+
+.main_visual .score ul.home li .score_top p.score_cal{
+    display: flex;
+    flex-direction: column;
+    line-height: 22px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.main_visual .score ul.home li .score_top p.score_place{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.main_visual .score ul.home li .score_top p.score_place i{
+    font-size: 0.9rem;
+    color: var(--main_blue);
+}
+
+.main_visual .score ul.home li .score_bottom {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.main_visual .score ul.home li .score_bottom img {
+
+}
+
+.main_visual .score ul.home li .score_bottom p {
+    font-size: 3rem;
+    font-family: 'SBAggroB';
+    font-weight: 500;
+    color: var(--main_gray);
+}
+
+.main_visual .score ul.home li .score_bottom p.score_red {
+    color: var(--main_red);
+}
+
+.main_visual .score ul.home li .score_bottom p.score_gray {}
+
+/* .main_visual .score .s_btn {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-5%);
+    gap: 10px;
+    display: flex;
+    
+}
+
+.main_visual .score .s_btn ul.score_list {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.main_visual .score .s_btn ul.score_list li {
+    background: #fff;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.main_visual .score .s_btn ul.score_list li.red {
+    background: var(--main_red);
+}
+
+.main_visual .score .s_btn .lrbtn {
+    font-size: 1.2rem;
+    color: #fff;
+} */
+
+/* .main_visual .score .swiper-pagination{
+    color: #fff;
+} */
+
+
+.main_visual .score .swiper-wrapper {
+    display: flex; /* 가로 슬라이드 배치 */
+    width: 100%; /* 부모 크기에 맞게 조정 */
+}
+.main_visual .score .swiper-slide {
+    width: 482px !important; /* 강제 고정 */
+    flex-shrink: 0; /* 슬라이드 크기가 변하지 않도록 설정 */
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: var(--main_red);
+}
+span.swiper-pagination-bullet{
+    background:#fff;
+    opacity: 1;
+}
+.listSwiper {
+    overflow: hidden !important;
+}
+
+
+/* news */
+
+section.news {
+    width: 100%;
+    height: 1228px;
+    padding: 150px 0;
+    /* position: relative; */
+}
+
+section.news .inner {
+    height: 100%;
+}
+
+section.news .inner .news_top  {
+    width: 100%;
+    height: 90px;
+    position: relative;
+}
+
+section.news .inner .news_top .news_tit {
+    width: 344px;
+    height: 90px;
+    padding: 20px;
+
+    background: var(--main_blue);
+    border-radius: 50px;
+
+    transform: rotate(-8deg);
+    position: absolute;
+    top: 66px;
+    left: 16px;
+}
+
+section.news .inner .news_tit h2,
+i {
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+section.news .inner .list {
+    width: 100%;
+    height: 928px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #fff;
+    border: 1px solid #bbb;
+    border-radius: 10%;
+
+}
+
+section.news .inner .list .list_top {
+    width: 100%;
+    height: 574px;
+}
+
+section.news .inner .list .list_top ul {
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--pretendard)
+}
+
+section.news .inner .list .list_top ul li {
+    border-bottom: 1px solid #bbb;
+    flex: 1;
+    padding: 15px;
+}
+
+section.news .inner .list .list_top ul li a {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.news .inner .list .list_top ul li a strong {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: var(--sbaggro);
+}
+
+section.news .inner .list .list_top ul li a strong.kia{
+    color: var(--main_kia);
+}
+
+section.news .inner .list .list_top ul li a strong.kt{
+    color: var(--main_kt);
+}
+section.news .inner .list .list_top ul li a strong.hanhwa{
+    color: var(--main_hanhwa);
+}
+section.news .inner .list .list_top ul li a strong.lotte{
+    color: var(--main_lotte);
+}
+
+
+section.news .inner .list .list_bottom {
+    width: 100%;
+    height: 164px;
+    box-sizing: border-box;
+    
+    overflow: hidden;
+    margin-left: 0;
+}
+
+section.news .inner .list .list_bottom ul {
+    display: flex;
+    /* gap: 16px; */
+    /* overflow: hidden; */
+    width: 100%;
+    height: 100%;
+    padding-right: 20px; /* 마지막 슬라이드 여유 공간 확보 */
+   
+}
+
+section.news .inner .list .list_bottom ul li {
+    text-align: right;
+    font-size: 1.1rem;
+    font-weight: 300;
+    width: 284px !important; /* 슬라이드 크기 고정 */
+    height: 164px;
+    flex-shrink: 0; /* 크기 줄어드는 것 방지 */
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+section.news .inner .list .list_bottom ul li.news_kia{
+    background-image: url(../img/newsimg_kia.png);
+
+
+}
+section.news .inner .list .list_bottom ul li.news_samsung{
+    background-image: url(../img/newsimg_samsung.png);
+
+
+}
+section.news .inner .list .list_bottom ul li.news_kt{
+    background-image: url(../img/newsimg_kt.png);
+
+}
+section.news .inner .list .list_bottom ul li.news_hanhwa{
+    background-image: url(../img/newsimg_hanhwa.png);
+
+}
+
+section.news .inner .list .list_bottom ul li a {
+    
+    
+}
+
+
+
+/* youtube */
+
+
+section.youtube {
+    width: 100%;
+    padding: 100px 0;
+}
+
+section.youtube .inner {
+    width: 1346px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.youtube .inner .ytb_top {
+    width: 748px;
+    height: 114px;
+    background: var(--main_blue);
+    border-radius: 800px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    /* 가운데정렬이 안돼서 패딩 줘써욤... */
+}
+
+section.youtube .inner .ytb_top h2,
+h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+
+section.youtube .inner .ytb_bottom {
+    width: 1500px;
+    height: 436px;
+    padding: 20px;
+}
+
+section.youtube .inner .ytb_bottom ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+section.youtube .inner .ytb_bottom ul li {
+    width: 250px;
+    height: 374px;
+    transition: .6s;
+    
+}
+section.youtube .inner .ytb_bottom ul li:hover{
+    transform: scale(1.05);
+}
+section.youtube .inner .ytb_bottom ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    gap: 30px;
+}
+
+section.youtube .inner .ytb_bottom ul li a img {
+    border-radius: 50%;
+    width: 224px;
+    
+}
+
+section.youtube .inner .ytb_bottom ul li a p {
+    width: 100%;
+    height: 40px;
+    
+}
+
+section.youtube .inner .ytb_bottom ul li a span {
+    border-bottom: 1px solid #bbb;
+    padding: 10px;
+    font-weight: 400;
+    width: 100%;
+    
+}
+
+section.youtube .inner .ytb_bottom ul li:hover a {
+ /*    font-size: 1.3rem;
+    transition: .6s; */
+
+}
+
+section.youtube .inner .ytb_bottom ul li:hover a img {
+    border: 10px solid var(--main_red);
+  /*   width: 266px; */
+  /*   transition: .6s; */
+
+}
+
+section.youtube .inner .ytb_bottom ul li:hover a span {
+    border: 1px solid #bbb;
+/*     padding: 10px;
+    font-size: 1.1rem;
+    transition: .6s; */
+
+}
+
+
+
+/* homepage */
+section.homepage {
+    width: 100%;
+    height: 1312px;
+    padding: 100px 0;
+}
+
+section.homepage .inner {
+    height: 100%;
+}
+
+section.homepage .inner h2 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+section.homepage .inner .go {
+    width: 100%;
+    height: 80%;
+}
+section.homepage .inner .go ul.go_home_card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section.homepage .inner .go ul.go_home_card li:nth-child(2n){
+    margin-top: 80px;
+}
+section.homepage .inner .go ul.go_home_card .home_card{
+    width: 220px;
+    height: 364px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: 'SBAggroL';
+    letter-spacing: 2px;
+    
+    
+}
+section.homepage .inner .go ul.go_home_card .home_card .home_card_top{
+    width: 100%;
+    height: 80%;
+    background: #fff;
+}
+section.homepage .inner .go ul.go_home_card .home_card .home_card_bottom{
+    width: 100%;
+    height: 20%;
+    padding: 10px;
+}
+
+section.homepage .inner .go ul.go_home_card .home_card .home_card_bottom a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+section.homepage .inner .go ul.go_home_card .home_card .home_card_bottom.kia{
+    background: var(--main_kia);
+}
+section.homepage .inner .go ul.go_home_card .home_card .home_card_bottom.samsung{
+    background: var(--main_samsung);
+}
+section.homepage .inner .go ul.go_home_card .home_card .home_card_bottom.lg{
+    background-color: var(--main_lg);
+}
+section.homepage .inner .go ul.go_home_card .home_card .home_card_bottom.doosan{
+    background-color: var(--main_doosan);
+}
+section.homepage .inner .go ul.go_home_card .home_card .home_card_bottom.kt{
+    background-color: var(--main_kt);
+}
+section.homepage .inner .go ul.go_home_card .home_card .home_card_bottom.ssg{
+    background-color: var(--main_ssg);
+}
+section.homepage .inner .go ul.go_home_card .home_card .home_card_bottom.lotte{
+    background-color: var(--main_lotte);
+}
+section.homepage .inner .go ul.go_home_card .home_card .home_card_bottom.hanhwa{
+    background-color: var(--main_hanhwa);
+}
+section.homepage .inner .go ul.go_home_card .home_card .home_card_bottom.nc{
+    background-color: var(--main_nc);
+}
+section.homepage .inner .go ul.go_home_card .home_card .home_card_bottom.kiwoom{
+    background-color: var(--main_kiwoom);
+}
+
+section.homepage .inner .go .home_card .home_card_bottom a p{
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 600;
+}
+section.homepage .inner .go .home_card .home_card_bottom a span i{
+    font-size: 1.7rem;
+}
+
+
+
+/* maps */
+
+section.maps {
+    width: 100%;
+    height: 1116px;
+    padding: 100px 0;
+}
+
+section.maps .inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+section.maps .inner h2{
+    width: 100%;
+    height: 122px;
+    line-height: 122px;
+}
+
+section.maps .inner .place_card {
+    width: 100%;
+    height: 794px;
+    display: flex;
+    gap: 96px;
+    
+}
+
+
+
+section.maps .inner .place_card .place {
+    width: 542px;
+    height: 792px;
+    flex: 1;
+    background-image: url(../img/maps.png);
+    position: relative;
+}
+
+
+
+section.maps .inner .place_card .place .map_icon_ssg{
+     width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--main_ssg);
+    position: absolute;
+    left: 117px;
+    top: 167px;
+}
+section.maps .inner .place_card .place  .map_icon_jamsil{
+     width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--main_blue);
+    position: absolute;
+    left: 175px;
+    top: 212px;
+}
+section.maps .inner .place_card .place  .map_icon_kiwoom{
+     width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--main_kiwoom);
+    position: absolute;
+    left: 141px;
+    top: 214px;
+}
+section.maps .inner .place_card .place .map_icon_kt{
+     width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--main_kt);
+    position: absolute;
+    left: 198px;
+    top: 295px;
+}
+section.maps .inner .place_card .place  .map_icon_hanhwa{
+     width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--main_hanhwa);
+    position: absolute;
+    left: 220px;
+    top: 425px;
+}
+section.maps .inner .place_card .place  .map_icon_samsung{
+     width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--main_samsung);
+    position: absolute;
+    left: 370px;
+    top: 505px;
+}
+section.maps .inner .place_card .place  .map_icon_lotte{
+    background: var(--main_lotte);
+     width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    left: 413px;
+    top: 560px;
+}
+section.maps .inner .place_card .place  .map_icon_nc{
+     width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--main_nc);
+    position: absolute;
+    left: 341px;
+    top: 604px;
+}
+section.maps .inner .place_card .place  .map_icon_kia{
+     width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--main_kia);
+    position: absolute;
+    left: 109px;
+    top: 660px;
+}
+
+
+
+section.maps .inner .place_card .card {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+section.maps .inner .place_card .card .map_card{
+    width: 260px;
+    height: 140px;
+    border-radius: 40px;
+    padding: 25px ;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: var(--pretendard);
+    font-weight: 600;
+    font-size: 1.4em;
+}
+section.maps .inner .place_card .card .map_card span{
+    font-family: var(--pretendard);
+    font-weight: 200;
+    font-size: 0.85rem;
+    line-height: 19px;
+    height: 40px;
+}
+section.maps .inner .place_card .card .map_card a{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--pretendard);
+    text-align: right;
+    display: none;
+  
+}
+section.maps .inner .place_card .card .map_card:hover a{
+    display: block;
+}
+
+
+section.maps .inner .place_card .card .map_card.ssg{
+    background: var(--main_ssg);
+}
+section.maps .inner .place_card .card .map_card.samsung{
+    background: var(--main_samsung);
+}
+section.maps .inner .place_card .card .map_card.jamsil{
+    background: var(--main_blue);
+}
+section.maps .inner .place_card .card .map_card.nc{
+    background: var(--main_nc);
+}
+section.maps .inner .place_card .card .map_card.kiwoom{
+    background: var(--main_kiwoom);
+}
+section.maps .inner .place_card .card .map_card.lotte{
+    background: var(--main_lotte);
+}
+section.maps .inner .place_card .card .map_card.kt{
+    background: var(--main_kt);
+}
+section.maps .inner .place_card .card .map_card.kia{
+    background: var(--main_kia);
+}
+section.maps .inner .place_card .card .map_card.hanhwa{
+    background: var(--main_hanhwa);
+}

@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+
+
+/* 
+    폰트, 폰트패밀리, 컨테이너
+    큰 틀 짜기(줄단위)
+    헤더 안 움직일거면 메인비주얼 안에 헤더넣기
+    메인 헤더 컨텐츠 아주 큰 틀만 
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main_blue: #213555;
+    --main_red: #C51717;
+    --main_gray: #686868;
+    --main_kia: #EA0029;
+    --main_samsung: #0066B3;
+    --main_lg: #C00C3F;
+    --main_doosan: #131230;
+    --main_kt: #000000;
+    --main_ssg: #D12C2C;
+    --main_lotte: #042445;
+    --main_hanhwa: #FC4E00;
+    --main_nc: #1D467D;
+    --main_kiwoom: #7D0521;
+    --pretendard: "Pretendard", 'serif';
+    --sbaggroB: 'SBAggroB';
+    --sbaggroM: 'SBAggroM';
+    --sbaggroL: 'SBAggroL';
+    
+}
+*{font-family: 'Pretendard-Regular';}
+h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.wrap {
+    width: 100%;
+    height: auto;
+}
+
+.inner {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 130px;
+    background: rgba(0, 0, 0, .2);
+    position: absolute;
+    z-index: 10;
+}
+
+header .inner{
+    height: 100%;
+    display: flex;
+}
+header h1{
+    width: 180px;
+    height: 100%;
+}
+header h1 a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1 a img{}
+
+header nav{
+    width: 980px;
+    height: 100%;
+}
+header nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #ddd;
+    
+}
+header nav ul li{
+    flex: 1;
+}
+header nav ul li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    
+}
+
+footer {
+    width: 100%;
+    height: 132px;
+    background: var(--main_blue);
+    padding: 10px 0;
+}
+
+footer .inner {
+    height: 100%;
+    display: flex;
+}
+
+footer .inner h2 {
+    width: 220px;
+    height: 112px;
+}
+
+footer .inner .f_txt {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .inner .f_txt .f_top {
+    width: 100%;
+    height: 50%;
+    flex: 1;
+    padding: 20px 0px;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+footer .inner .f_txt .f_top ul{
+    display: flex;
+    color: #fff;
+    
+}
+footer .inner .f_txt .f_top ul li{
+    border-right: 1px solid #fff;
+    padding: 0px 10px;
+}
+footer .inner .f_txt .f_top ul li:last-child{
+    border: 0;
+}
+
+footer .inner .f_txt .f_bottom {
+    width: 100%;
+    height: 50%;
+    flex: 1;
+    font-weight: 100;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+}
+
+footer .inner .f_txt .f_bottom ul{
+    display: flex;
+    color: #fff;
+}
+footer .inner .f_txt .f_bottom ul li{
+    padding: 10px;
+    font-size: 0.9rem;
+}

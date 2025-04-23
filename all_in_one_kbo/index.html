@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="한국 프로야구 10개구단을 소개해주는 페이지">
+    <meta name="keywords" content="야구, kbo, 야구구단">
+    <meta name="author" content="Leenara">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오리넌크보</title>
+    <script src="https://kit.fontawesome.com/8198a4d071.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <!-- 스와이퍼 -->
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> <!-- aos -->
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main_style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"><!-- 스와이퍼 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="inner">
+                <h1><a href="#"><img src="img/mainlogo.png" alt="오리넌크보"></a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">하이라이트</a></li>
+                        <li><a href="#">경기 결과</a></li>
+                        <li><a href="#">최근 뉴스</a></li>
+                        <li><a href="#">구단 홈페이지</a></li>
+                        <li><a href="#">찾아가는 길</a></li>
+                    </ul>
+                </nav>
+            </div><!-- //.inner -->
+        </header>
+        <div class="main_visual">
+            <div class="swiper mySwiperbanner "> <!-- swiper mySwiper -->
+                <ul class="slide swiper-wrapper"> <!-- swiper-wrapper -->
+                    <li class="swiper-slide"><img src="img/banner_samsung_txt.png" alt="삼성"></li>
+                    <li class="swiper-slide"><img src="img/banner_kt_txt.png" alt="케이티"></li>
+                    <li class="swiper-slide"><img src="img/banner_SSG_txt.png" alt="쓱"></li>
+                    <li class="swiper-slide"><img src="img/banner_NC_txt.png" alt="엔씨"></li>
+                    <li class="swiper-slide"><img src="img/banner_lotte_txt.png" alt="롯데"></li>
+                    
+                </ul><!-- //.slide -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div><!-- //.banner -->
+            <div class="score swiper mySwiperscore">
+                <ul class="home swiper-wrapper">                
+                    <li class="swiper-slide">
+                        <div class="score_top">
+                            <p class="score_cal">2025.03.10(월) 13:00</p>
+                            <p class="score_place"><i class="fa-solid fa-location-arrow"></i>삼성라이온즈파크</p>
+                        </div><!-- //.score_top -->
+                        <div class="score_bottom">
+                            <img src="img/score_doosan_logo_left.png" alt="kt">
+                            <p class="score_red">8</p>
+                            <p class="score_gray">:</p>
+                            <p class="score_gray">5</p>
+                            <img src="img/score_samsung_logo_right.png" alt="키움">
+                        </div><!-- //.score_bottom -->
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="score_top ">
+                            <p class="score_cal">2025.03.10(월) 13:00</p>
+                            <p class="score_place"><i class="fa-solid fa-location-arrow"></i>수원KT위즈파크</p>
+                        </div><!-- //.score_top -->
+                        <div class="score_bottom">
+                            <img src="img/score_kt_logo_left.png" alt="kt">
+                            <p class="score_red">7</p>
+                            <p class="score_gray">:</p>
+                            <p class="score_gray">4</p>
+                            <img src="img/score_kiwoomlogo_right.png" alt="키움">
+                        </div><!-- //.score_bottom -->
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="score_top">
+                            <p class="score_cal">2025.03.10(월) 13:00</p>
+                            <p class="score_place"><i class="fa-solid fa-location-arrow"></i>SSG 랜더스 필드</p>
+                        </div><!-- //.score_top -->
+                        <div class="score_bottom">
+                            <img src="img/score_hanhwa_logo_right.png" alt="kt">
+                            <p class="score_red">3</p>
+                            <p class="score_gray">:</p>
+                            <p class="score_gray">1</p>
+                            <img src="img/score_ssg_logo_left.png" alt="키움">
+                        </div><!-- //.score_bottom -->
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="score_top">
+                            <p class="score_cal">2025.03.10(월) 13:00</p>
+                            <p class="score_place"><i class="fa-solid fa-location-arrow"></i>창원NC파크</p>
+                        </div><!-- //.score_top -->
+                        <div class="score_bottom">
+                            <img src="img/score_kia_logo_left.png" alt="kia">
+                            <p class="score_red">3</p>
+                            <p class="score_gray">:</p>
+                            <p class="score_gray">6</p>
+                            <img src="img/score_nc_logo_right.png" alt="키움">
+                        </div><!-- //.score_bottom -->
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="score_top">
+                            <p class="score_cal">025.03.10(월) 13:00</p>
+                            <p class="score_place"><i class="fa-solid fa-location-arrow"></i>사직야구장</p>
+                        </div><!-- //.score_top -->
+                        <div class="score_bottom">
+                            <img src="img/score_lg_logo_left.png" alt="kt">
+                            <p class="score_red">8</p>
+                            <p class="score_gray">:</p>
+                            <p class="score_gray">2</p>
+                            <img src="img/score_lotte_logo_right.png" alt="키움">
+                        </div><!-- //.score_bottom -->
+                    </li>
+                </ul><!-- //.home -->
+                <!--  <div class="s_btn">
+                    <i class="fa-solid fa-angle-left lrbtn"></i>
+                    <ul class="score_list">
+                        <li></li>
+                        <li></li>
+                        <li class="red"></li>
+                        <li></li>
+                        <li></li>
+                    </ul> //.score_list
+                    <i class="fa-solid fa-angle-right lrbtn"></i>
+                </div> //.s_btn  -->
+                <div class="swiper-pagination"></div>
+            </div><!-- //.score -->
+        </div><!-- //.main_visual -->
+        <section class="news">
+            <div class="inner">
+                <div class="news_top">
+                    <div class="news_tit">
+                        <h2>최근뉴스 <i class="fa-solid fa-angle-right"></i> </h2>
+                    </div><!-- //.news_tit -->
+                </div><!--//. news_top -->
+                <div class="list">
+                    <div class="list_top">
+                        <ul>
+                            <li><a href="https://www.koreabaseball.com/MediaNews/News/BreakingNews/View.aspx?bdSe=58270">
+                                    <strong class="kia">KIA</strong>우승팀 KIA 잔치' 김도영 최다득표-최형우
+                                    역대 최고령-박찬호 유격수
+                                </a></li>
+                            <li><a href="https://www.koreabaseball.com/MediaNews/News/BreakingNews/View.aspx?bdSe=58166">
+                                    <strong class="kt">KT</strong>로하스 8회 마법 같은 역전 스리런…
+                                    KT, SSG 잡고 ‘5년 연속 PS
+                                </a></li>
+                            <li><a href="https://www.koreabaseball.com/MediaNews/News/BreakingNews/View.aspx?bdSe=58269">
+                                    <strong class="hanhwa">한화</strong>
+                                    한화, 투수 폰세 100만 달러
+                                    외야수 플로리얼 85만 달러 영입
+                                </a></li>
+                            <li><a href="https://www.koreabaseball.com/MediaNews/News/BreakingNews/View.aspx?bdSe=58196">
+                                    <strong class="kt">KT</strong>기적의 팀’ KT
+                                    연장 11회 끝내기→극적인 4차전 승리. 2승2패
+                                </a></li>
+                            <li><a href="https://www.koreabaseball.com/MediaNews/News/BreakingNews/View.aspx?bdSe=58268">
+                                    <strong class="lotte">롯데</strong>150만 달러' 반즈
+                                    '95만 달러' 데이비슨, 롯데 외인 구성 완료
+                                </a></li>
+                        </ul>
+                    </div><!-- //.list_top -->
+                    <div class="list_bottom swiper newslistmySwiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide news_kia"><a href="https://www.koreabaseball.com/MediaNews/News/BreakingNews/View.aspx?bdSe=58243">37년만에 광주의 밤이 열광했다…<br>불패의 KIA 역전승</a>
+                            </li>
+                            <li class="swiper-slide news_samsung"><a href="https://www.koreabaseball.com/MediaNews/News/BreakingNews/View.aspx?bdSe=58232">라팍포 4방,<br>‘가을의 사나이’레예스
+                                    영웅투... 삼성 반격의 1승</a></li>
+                            <li class="swiper-slide news_kt"><a href="https://www.koreabaseball.com/MediaNews/News/BreakingNews/View.aspx?bdSe=58176">역대 최초 WC 업셋 기적...<br>'벤자민 무실점' KT, 준PO
+                                    진출</a></li>
+                            <li class="swiper-slide news_hanhwa"><a href="https://www.koreabaseball.com/MediaNews/News/BreakingNews/View.aspx?bdSe=58253">한화, 유격수 심우준 전격 영입...<br>4년 최대 50억
+                                    크게 쐈다</a></li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div><!-- //.list_bottom -->
+                </div><!-- //.list -->
+            </div><!-- //.inner -->
+        </section><!-- //.news -->
+        <section class="youtube">
+            <div class="inner">
+                <div class="ytb_top">
+                    <h2>KBO의 소식이 보고싶다면?</h2>
+                    <h3>KBO YOUTUBE</h3>
+                </div><!-- //.ytb_top -->
+                <div class="ytb_bottom">
+                    <ul>
+                        <li><a href="https://youtu.be/1Z5-nsFdrwU?si=4DYNXw8RM7UVvZei">
+                                <img src="img/img box_1.png" alt="">
+                                <p>다시 따뜻할 ‘봄’을 기다리며</p>
+                                <span>보러가기 ></span>
+                            </a></li>
+                        <li><a href="https://youtu.be/zBGZPhDEkk0?si=R7Z63Cw60f10AXp8"><img src="img/img box_2.png" alt="">
+                                <p>고도화된 2025 Next-Level Training Camp
+                                    현장!</p><span>보러가기 ></span>
+                            </a></li>
+                        <li><a href="https://youtu.be/PnPvbZROjYI?si=pi4sRccnX3vr_R_E"><img src="img/img box_3.png" alt="">
+                                <p>2024년 20기 KBO 대학생마케터 ST-LIKE 수료식</p><span>보러가기
+                                    ></span>
+                            </a></li>
+                        <li><a href="https://youtu.be/9RPtxOX3558?si=dce3TW17WmuGaFj6"><img src="img/img box_4.png" alt="">
+                                <p>의무위원회 메디컬스피칭 EP.07</p><span>보러가기 ></span>
+                            </a>
+                        </li>
+                        <li><a href="https://youtu.be/ySW-Ugh94lc?si=sXY80fIvs-ug6-Ns"><img src="img/img box_1.png" alt="">
+                                <p>크보팬 1루와 시즌2 Ep.5</p> <span>보러가기 ></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- //.ytb_bottom -->
+            </div><!-- //.inner -->
+        </section><!-- //.youtube -->
+        <section class="homepage">
+            <div class="inner">
+                <h2>홈페이지</h2>
+                <div class="go">
+                    <ul class="go_home_card">
+                        <li>
+                            <div class="home_card">
+                                <div class="home_card_top"><a href="https://tigers.co.kr/"><img src="img/kia_main_logo.png" alt=""></a>
+                                </div>
+                                <div class="home_card_bottom kia">
+                                    <a href="https://tigers.co.kr/">
+                                        <p>KIA</p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                    </a>
+                                </div>
+                            </div><!-- //.home_card -->
+                        </li>
+                        <li>
+                            <div class="home_card">
+                                <div class="home_card_top"><a href="https://www.samsunglions.com/index.asp"><img src="img/samsung_main_logo.png" alt=""></a>
+                                </div>
+                                <div class="home_card_bottom samsung">
+                                    <a href="https://www.samsunglions.com/index.asp">
+                                        <p>삼성</p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                    </a>
+                                </div>
+                            </div><!-- //.home_card -->
+                        </li>
+                        <li>
+                            <div class="home_card">
+                                <div class="home_card_top"><a href="https://www.lgtwins.com/service/html.ncd?view=/pc_twins/twins_main/twins_main"><img src="img/lg_main_logo.png" alt=""></a></div>
+                                <div class="home_card_bottom lg">
+                                    <a href="https://www.lgtwins.com/service/html.ncd?view=/pc_twins/twins_main/twins_main">
+                                        <p>LG</p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                    </a>
+                                </div>
+                            </div><!-- //.home_card -->
+                        </li>
+                        <li>
+                            <div class="home_card">
+                                <div class="home_card_top"><a href="https://www.doosanbears.com/"><img src="img/doosan_main_logo.png" alt=""></a>
+                                </div>
+                                <div class="home_card_bottom doosan">
+                                    <a href="https://www.doosanbears.com/">
+                                        <p>두산</p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                    </a>
+                                </div>
+                            </div><!-- //.home_card -->
+                        </li>
+                        <li>
+                            <div class="home_card">
+                                <div class="home_card_top"><a href="https://www.ktwiz.co.kr/"><img src="img/kt_main_logo.png" alt=""></a></div>
+                                <div class="home_card_bottom kt">
+                                    <a href="https://www.ktwiz.co.kr/">
+                                        <p>KT</p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                    </a>
+                                </div>
+                            </div><!-- //.home_card -->
+                        </li>
+                        <li>
+                            <div class="home_card">
+                                <div class="home_card_top"><a href="https://www.ktwiz.co.kr/"><img src="img/ssg_main_logo.png" alt=""></a>
+                                </div>
+                                <div class="home_card_bottom ssg">
+                                    <a href="https://www.ktwiz.co.kr/">
+                                        <p>SSG</p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                    </a>
+                                </div>
+                            </div><!-- //.home_card -->
+                        </li>
+                        <li>
+                            <div class="home_card">
+                                <div class="home_card_top"><a href="https://www.giantsclub.com/html/"><img src="img/lotte_main_logo.png" alt=""></a>
+                                </div>
+                                <div class="home_card_bottom lotte">
+                                    <a href="https://www.giantsclub.com/html/">
+                                        <p>롯데</p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                    </a>
+                                </div>
+                            </div><!-- //.home_card -->
+                        </li>
+                        <li>
+                            <div class="home_card">
+                                <div class="home_card_top"><a href="https://www.hanwhaeagles.co.kr/index.do"><img src="img/hanhwa_main_logo.png" alt=""></a>
+                                </div>
+                                <div class="home_card_bottom hanhwa">
+                                    <a href="https://www.hanwhaeagles.co.kr/index.do">
+                                        <p>한화</p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                    </a>
+                                </div>
+                            </div><!-- //.home_card -->
+                        </li>
+                        <li>
+                            <div class="home_card">
+                                <div class="home_card_top"><a href="https://www.ncdinos.com/"><img src="img/nc_main_logo.png" alt=""></a></div>
+                                <div class="home_card_bottom nc">
+                                    <a href="https://www.ncdinos.com/">
+                                        <p>NC</p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                    </a>
+                                </div>
+                            </div><!-- //.home_card -->
+                        </li>
+                        <li>
+                            <div class="home_card">
+                                <div class="home_card_top"><a href="https://heroesbaseball.co.kr/index.do"><img src="img/kiwoom_main_logo.png" alt=""></a>
+                                </div>
+                                <div class="home_card_bottom kiwoom">
+                                    <a href="https://heroesbaseball.co.kr/index.do">
+                                        <p>키움</p>
+                                        <span><i class="fa-solid fa-angle-right"></i></span>
+                                    </a>
+                                </div>
+                            </div><!-- //.home_card -->
+                        </li>
+                    </ul><!-- //.go_home_card -->
+                </div><!-- //.go -->
+            </div><!-- //.inner -->
+        </section><!-- //.homepage -->
+        <section class="maps">
+            <div class="inner">
+                <h2>찾아가는 길</h2>
+                <div class="place_card">
+                    <div class="place">
+
+                        <div class="map_icon_ssg"></div>
+                        <div class="map_icon_jamsil"></div>
+                        <div class="map_icon_kiwoom"></div>
+                        <div class="map_icon_kt"></div>
+                        <div class="map_icon_hanhwa"></div>
+                        <div class="map_icon_samsung"></div>
+                        <div class="map_icon_lotte"></div>
+                        <div class="map_icon_nc"></div>
+                        <div class="map_icon_kia"></div>
+
+                    </div><!-- //.place -->
+                    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <div class="map_card ssg">
+                            <p>SSG 랜더스필드</p>
+                            <span>인천 미추홀구 매소홀로 618</span>
+                            <a href="https://naver.me/5iTd7ULW">지도 ></a>
+                        </div><!-- //.map_card -->
+                        <div class="map_card samsung">
+                            <p>라이온즈 파크</p>
+                            <span>대구 수성구 야구전설로 1<br>대구삼성라이온즈파크</span>
+                            <a href="https://naver.me/5PV0pEB1">지도 ></a>
+                        </div><!-- //.map_card -->
+                        <div class="map_card jamsil">
+                            <p>잠실 야구장</p>
+                            <span>서울 송파구 올림픽로 19-2<br>서울 종합운동장</span>
+                            <a href="https://naver.me/x0U8pybs">지도 ></a>
+                        </div><!-- //.map_card -->
+                        <div class="map_card nc">
+                            <p>창원 NC 파크</p>
+                            <span>경남 창원시 마산회원구 삼호로 63 </span>
+                            <a href="https://naver.me/GSD5eVT7">지도 ></a>
+
+                        </div><!-- //.map_card -->
+                        <div class="map_card kiwoom">
+                            <p>고척 스카이돔</p>
+                            <span>서울 구로구 경인로 430</span>
+                            <a href="https://naver.me/5tJTwp1B">지도 ></a>
+
+                        </div><!-- //.map_card -->
+                        <div class="map_card lotte">
+                            <p>사직야구장</p>
+                            <span>부산 동래구 사직로 55-32</span>
+                            <a href="https://naver.me/Gmb4pu6G">지도 ></a>
+
+                        </div><!-- //.map_card -->
+                        <div class="map_card kt">
+                            <p>수원 KT 위즈파크</p>
+                            <span>경기 수원시 장안구 경수대로 893<br>수원종합운동장(주경기장)</span>
+                            <a href="https://naver.me/FtTbog3i">지도 ></a>
+
+                        </div><!-- //.map_card -->
+                        <div class="map_card kia">
+                            <p>광주-기아 챔피언스 필드</p>
+                            <span>광주 북구 서림로 10 4층</span>
+                            <a href="https://naver.me/xiq9rOHV">지도 ></a>
+
+                        </div><!-- //.map_card -->
+                        <div class="map_card hanhwa">
+                            <p>한화 생명 이글스파크</p>
+                            <span>대전 중구 대종로 373 한밭종합운동장 한화생명이글스파크
+                                                             
+                            </span>
+                            <a href="https://naver.me/FoEoVGn6">지도 ></a>   
+
+
+                        </div><!-- //.map_card -->
+                    </div><!-- //.card -->
+                </div><!-- //.place_card -->
+            </div><!-- //.inner -->
+        </section><!-- //.mpas  -->
+        <footer>
+            <div class="inner">
+                <h2><img src="img/footer-logo.png" alt=""></h2>
+                <div class="f_txt">
+                    <div class="f_top">
+                        <ul>
+                            <li>(사)한국야구위원회</li>
+                            <li>서울시 강남구 강남대로 278</li>
+                            <li>02-3460-4600</li>
+                        </ul>
+                    </div><!-- //.f_top -->
+                    <div class="f_bottom">
+                        <ul>
+                            <li>개인정보취급방침</li>
+                            <li>쿠키정책</li>
+                            <li>이메일무단수집거부</li>
+                        </ul>
+                    </div><!-- //.f_bottom -->
+                </div><!-- //.f_txt -->
+            </div><!-- //.inner -->
+        </footer>
+    </div><!-- //.wrap -->
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

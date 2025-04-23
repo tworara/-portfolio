@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Gmarket Sans TTF';
+    font-weight: bold;
+    font-style: normal;
+    src: url(../font/GmarketSansTTFBold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Gmarket Sans TTF';
+    font-weight: 500;
+    font-style: normal;
+    src: url(../font/GmarketSansTTFMedium.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Gmarket Sans TTF';
+    font-weight: 300;
+    font-style: normal;
+    src: url(../font/GmarketSansTTFLight.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'heiro';
+    src: url(../font/HeirofLightBold.woff) format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
