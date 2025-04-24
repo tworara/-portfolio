@@ -51,9 +51,9 @@ h2{
 
 header{
     width: 100%;
-    height: 130px;
-    background: rgba(0, 0, 0, .2);
-    position: absolute;
+    height: 100px;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
     z-index: 10;
 }
 
@@ -84,7 +84,8 @@ header nav ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-family: var(--pretendard);
     color: #ddd;
     
 }
