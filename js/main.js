@@ -3,98 +3,6 @@ $(function () {
   gsap.registerPlugin(ScrollTrigger);
 
 
-  /* banner > motion1 > motion2 부드럽게 넘기는 모션 */
-
-  const sectionscroll = document.querySelectorAll('.banner, .motion');
-  let currentIndex = 0;
-  let isScrolling = false;
-  let isMotionScrolling; // 스크롤 중복 방지
-  window.addEventListener('wheel', function (e) {
-    // 현재 화면 기준으로 .banner 또는 .motion이 보이는지 체크
-    const currentSection = Array.from(sectionscroll).find(section => {
-      const rect = section.getBoundingClientRect();
-      return rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2;
-    });
-
-    if (!currentSection) return; // 대상 섹션 안에 없으면 무시
-    if (isScrolling) return;
-
-    const delta = e.deltaY;
-
-    if (delta > 0 && currentIndex < sectionscroll.length - 1) {
-      currentIndex++;
-    } else if (delta < 0 && currentIndex > 0) {
-      currentIndex--;
-    } else {
-      return;
-    }
-
-    isScrolling = true;
-
-    sectionscroll[currentIndex].scrollIntoView({
-      behavior: 'smooth'
-    });
-
-    setTimeout(() => {
-      isScrolling = false;
-    }, 800);
-  }, { passive: false });
-
-
-
-
-  // motion 섹션을 pin 처리하고 motion1 → motion2 전환
-  gsap.timeline({
-    scrollTrigger: {
-      trigger: ".motion",
-      start: "top top",
-      end: "+=200%",  // motion 길이 조정 (100%당 한 화면)
-      scrub: true,
-      pin: true,
-      anticipatePin: 1,
-
-    }
-  })
-    .fromTo(".motion .motion1",
-      { opacity: 1, scale: 6 },
-      { opacity: 0, scale: 1, duration: 3 }
-    )
-    .fromTo(".motion .motion2",
-      { opacity: 0, scale: 1.2 },
-      { opacity: 1, scale: 1, duration: 1 }, "<50%");
-
-
-
-
-
-  /* motion2 심플리스크롤 */
-
-
-  $('.motion_scrolls .motion_scroll1').simplyScroll({
-    speed: 5,
-    direction: 'forwards',
-  });
-  $('.motion_scrolls .motion_scroll2').simplyScroll({
-    speed: 5,
-    direction: 'forwards',
-  });
-  $('.motion_scrolls .motion_scroll3').simplyScroll({
-    speed: 5,
-    direction: 'forwards',
-  });
-  $('.motion_scrolls .motion_scroll4').simplyScroll({
-    speed: 5,
-    direction: 'forwards',
-  });
-
-  /* motion2 마우스 */
-
-  document.addEventListener('mousemove', function (e) {
-    const motionImg = document.querySelector('.motion_img2');
-    motionImg.style.top = `${e.clientY}px`;
-    motionImg.style.left = `${e.clientX}px`;
-  });
-
 
   /* info 가로스크롤 */
 
@@ -153,34 +61,21 @@ $(function () {
 
 
 
-  let meritswiper = new Swiper(".merit_project", {
-    slidesPerView: 'auto',
-    centeredSlides: false,
-    grabCursor: true,
-    loop: true,
-    resistanceRatio: 0,
-    allowTouchMove: true,
-    autoplay: {
-      delay: 2000,
-    }
 
-  });
+/* merit on click */
 
-
-/* project on click */
-
-$('.project_list .book_kbo').click(function(){
-  $('.project_view .book_kbo').toggleClass('on')
+$('.merit_list .book_kbo').click(function(){
+  $('.merit_view .book_kbo').toggleClass('on')
 })
 
-$('.project_list .book_chahong').click(function(){
-  $('.project_view .book_chahong').toggleClass('on')
+$('.merit_list .book_chahong').click(function(){
+  $('.merit_view .book_chahong').toggleClass('on')
 })
 
-  /* project swiper */
+  /* merit swiper */
 
 
-  let projectswiper = new Swiper(".project_list_all", {
+  let meritswiper = new Swiper(".merit_list_all", {
     direction: "vertical",
     effect: "coverflow",
     grabCursor: true,
