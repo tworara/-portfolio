@@ -43,133 +43,7 @@
   height: 100%;
 }
 
-/* motion */
 
-.motion {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
-
-.motion article {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  transition: .1s;
-}
-
-.motion article.on {
-  opacity: 1;
-  z-index: 10;
-}
-
-.motion_img1 {
-  width: 600px;
-  height: 600px;
-  background-image: url(../img/motionimg1.png);
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -300px;
-  margin-top: -300px;
-  z-index: 50;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 3rem;
-  /* transform: scale(8); */
-  /* transition: .6s; */
-}
-
-.motion .motion1.on .motion_img1 {
-  /* transform: scale(1); */
-}
-
-.motion_img1 span {
-  color: var(--main_navy_deep);
-}
-
-.motion_img2 {
-  width: 500px;
-  height: 500px;
-  background-color: var(--main_navy_deep);
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -250px;
-  margin-top: -250px;
-  z-index: 50;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 300;
-  color: var(--main_white);
-}
-
-
-
-/* motion scroll */
-
-.motion_scrolls {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.motion_scrolls.show {
-  display: block;
-}
-
-.simply-scroll-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  height: 25vh;
-  overflow: hidden;
-}
-
-.simply-scroll .simply-scroll-clip {
-  width: 100%;
-  display: flex;
-  overflow: hidden;
-}
-
-.motion_scrolls ul {
-  width: 100%;
-  display: flex;
-}
-
-.motion_scrolls li {
-  font-size: 5rem;
-  white-space: nowrap;
-}
-
-/* motion animation */
-
-.motion_img1,
-.motion_img2 {
-  /* transition: opacity 0.8s ease; */
-}
-
-/* 전환 상태 */
-.motion_img1.fade-out {
-  /*   opacity: 0; */
-}
-
-.motion_img2.fade-in {
-  /*  opacity: 1;
-  z-index: 52; */
-}
 
 
 /* info */
@@ -228,6 +102,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: var(--main_font);
 }
 
 .skill h2 .skill_gr {
@@ -257,75 +132,102 @@
   height: 100vh;
   background-color: var(--main_navy_deep);
   display: flex;
-
+  font-family: var(--pretendard);
+  
 }
 
 
 .merit .merit_view {
   width: 50%;
   height: 100%;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-
-  background-color: #ccc;
-}
-
-
-.merit .merit_list_all {
-  width: 50%;
-  height: 100%;
-  background-color: aquamarine;
-
-}
-
-
-
-/*
-.merit .merit_view .merit_view_book {
-  width: 588px;
-  height: 738px;
-  background-image: url(../img/projectimg.png);
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  border: 5px solid #000;
-  flex-shrink: 0;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
-  padding-left: 50px;
-  padding-top: 280px;
 }
 
-.merit .merit_view .merit_view_book.on{
+.merit .merit_view .merit_view_left{
+  width: 588px;
+  height: 740px;
+  background-image: url(../img/backgroundimg.png);
+  border: 3px solid #000;
+  position: relative;
+}
+
+
+.merit_view .merit_view_left h3{
+  font-size: 3rem;
+  color: #1a1a1a;
+  font-weight: bold;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.merit_view .merit_view_left p{
+  font-size: 1.3rem;
+  color: #1a1a1a;
+  font-weight: lighter;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.merit_view .merit_view_left li{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: none;
+
+}
+
+.merit_view .merit_view_left li.on{
   display: block;
 }
 
-.merit .merit_view .merit_view_book h3 {
-  font-weight: 600;
-  font-size: 3rem;
+
+
+
+
+
+.merit .merit_list_section {
+  width: 50%;
+  height: 100%;
 }
 
-.merit .merit_view .merit_view_book p {
-  font-size: 2rem;
+
+.merit .merit_list_section li.swiper-slide-prev {
+  rotate: 30deg;
 }
 
-.merit .merit_view .merit_view_book a {
-  font-weight: 300;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: right;
+.merit .merit_list_section li.swiper-slide-next {
+  rotate: -30deg;
+}
+
+.merit .merit_list_section li.swiper-slide-active {
+  opacity: 1;
+}
+
+.merit_list_section .merit_list li {
   width: 100%;
-  padding-right: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  transform: rotate(-90deg);
 }
 
 
 
-.merit .merit_list {
+.merit_list_section .merit_list {
   width: 100%;
   height: 100%;
   display: flex;
@@ -333,16 +235,16 @@
   padding-right: 50px;
 }
 
-.merit .merit_list h3 {
+.merit_list_section .merit_list h3 {
   font-weight: 600;
   font-size: 3rem;
 }
 
-.merit .merit_list p {
-  font-size: 2rem;
+.merit_list_section .merit_list p {
+  font-size: 1.5rem;
 }
 
-.merit .merit_list li {
+.merit_list_section .merit_list li {
   background-size: cover;
   width: 700px;
   height: 500px;
@@ -353,26 +255,17 @@
 
 }
 
-.merit .meritt_list li.swiper-slide-prev {
-  rotate: 30deg;
-}
-
-.merit .merit_list li.swiper-slide-next {
-  rotate: -30deg;
-}
-
-.merit .merit_list li.swiper-slide-active {}
-
-.merit .merit_list li .book {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 20px;
+.merit_view_right{
   transform: rotate(-90deg);
-} */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  font-family: var(--pretendard);
+}
+
+
+
 
 
 /* design */
@@ -421,6 +314,7 @@
   width: 100%;
   display: flex;
   justify-content: left;
+  font-family: var(--main_font);
 }
 
 .design_right p {

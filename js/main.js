@@ -64,18 +64,27 @@ $(function () {
 
 /* merit on click */
 
-$('.merit_list .book_kbo').click(function(){
-  $('.merit_view .book_kbo').toggleClass('on')
+$('.merit_list_section .merit_list .merit_list_happy').click(function(){
+  $('.merit_view .merit_view_left .view_happy').toggleClass('on')
 })
 
-$('.merit_list .book_chahong').click(function(){
-  $('.merit_view .book_chahong').toggleClass('on')
+$('.merit_list_section .merit_list .merit_list_res').click(function(){
+  $('.merit_view .merit_view_left .view_res').toggleClass('on')
 })
+
+$('.merit_list_section .merit_list .view_smile').click(function(){
+  $('.merit_view .merit_view_left .view_smile').toggleClass('on')
+})
+
+$('.merit_list_section .merit_list .merit_list_detail').click(function(){
+  $('.merit_view .merit_view_left .view_detail').toggleClass('on')
+})
+
 
   /* merit swiper */
 
 
-  let meritswiper = new Swiper(".merit_list_all", {
+  let meritswiper = new Swiper(".merit_list_section", {
     direction: "vertical",
     effect: "coverflow",
     grabCursor: true,

@@ -7,11 +7,12 @@
     --main_navy : #133683;
     --main_font : 'Gmarket Sans TTF';
     --heiro_font : 'heiro';
+    --pretendard :'Pretendard'
 }
 
 .wrap{
     width: 100%;
-    font-family: var(--main_font);
+    font-family: var(--pretendard);
     background-image: url(../img/backgroundimg.png);
     overflow: hidden;
 }
