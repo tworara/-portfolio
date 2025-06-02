@@ -58,7 +58,7 @@ let projectSwiper = new Swiper(".projectSwiper", {
 
 /* merit on click */
 
-$('.merit_list_section .merit_list .merit_list_happy').click(function(){
+/* $('.merit_list_section .merit_list .merit_list_happy').click(function(){
   $('.merit_view .merit_view_left .view_happy').toggleClass('on')
 })
 
@@ -72,7 +72,86 @@ $('.merit_list_section .merit_list .view_smile').click(function(){
 
 $('.merit_list_section .merit_list .merit_list_detail').click(function(){
   $('.merit_view .merit_view_left .view_detail').toggleClass('on')
-})
+}) */
+
+
+
+
+
+
+/* $('.merit_list_section .merit_list .merit_list_happy').click(function () {
+  $('.merit_view .merit_view_left li').removeClass('on'); // 다른 애들 다 꺼
+  $('.merit_view .merit_view_left .view_happy').addClass('on'); // 이건 켜
+});
+
+$('.merit_list_section .merit_list .merit_list_res').click(function () {
+  $('.merit_view .merit_view_left li').removeClass('on');
+  $('.merit_view .merit_view_left .view_res').addClass('on');
+});
+
+$('.merit_list_section .merit_list .merit_list_smile').click(function () {
+  $('.merit_view .merit_view_left li').removeClass('on');
+  $('.merit_view .merit_view_left .view_smile').addClass('on');
+});
+
+$('.merit_list_section .merit_list .merit_list_detail').click(function () {
+  $('.merit_view .merit_view_left li').removeClass('on');
+  $('.merit_view .merit_view_left .view_detail').addClass('on');
+}); */
+
+
+
+
+
+
+
+$('.merit_list_section .merit_list .merit_list_happy').click(function () {
+  const target = $('.merit_view .merit_view_left .view_happy');
+
+  // 이미 켜져 있다면 꺼주기
+  if (target.hasClass('on')) {
+    target.removeClass('on');
+  } else {
+    // 다른 거 다 끄고 이거만 켜기
+    $('.merit_view .merit_view_left li').removeClass('on');
+    target.addClass('on');
+  }
+});
+
+$('.merit_list_section .merit_list .merit_list_res').click(function () {
+  const target = $('.merit_view .merit_view_left .view_res');
+  if (target.hasClass('on')) {
+    target.removeClass('on');
+  } else {
+    $('.merit_view .merit_view_left li').removeClass('on');
+    target.addClass('on');
+  }
+});
+
+$('.merit_list_section .merit_list .merit_list_smile').click(function () {
+  const target = $('.merit_view .merit_view_left .view_smile');
+  if (target.hasClass('on')) {
+    target.removeClass('on');
+  } else {
+    $('.merit_view .merit_view_left li').removeClass('on');
+    target.addClass('on');
+  }
+});
+
+$('.merit_list_section .merit_list .merit_list_detail').click(function () {
+  const target = $('.merit_view .merit_view_left .view_detail');
+  if (target.hasClass('on')) {
+    target.removeClass('on');
+  } else {
+    $('.merit_view .merit_view_left li').removeClass('on');
+    target.addClass('on');
+  }
+});
+
+
+
+
+
 
 
   /* merit swiper */
