@@ -101,7 +101,17 @@ $('.merit_list_section .merit_list .merit_list_detail').click(function(){
 
   
 
+/* project swiper */
 
+
+let projectSwiper = new Swiper(".projectSwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
 
 
 

@@ -126,10 +126,105 @@
 .project{
   width: 100%;
   height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
+.project .project_list{
+  display: flex;
+  gap: 20px;
+  margin-left: 50px;
+}
+.project_list_solo{
+  width: 1250px;
+  height: 760px;
+  background-color: #55C6FF;
+  border-radius: 10px;
+}
+ul.project_list li.kbo{
+  background-color: #232E47;
+  color: #fafafa;
+}
+ul.project_list li.lamuse{
+  background-color: #1a1a1a;
+  color: #fafafa;
+}
+ul.project_list li.fan{
+  color: #fafafa;
+  background-color: #364732;
+}
+ul.project_list li.ontour{
+  background-color: #920F0F;
+  color: #fafafa;
+}
 
+.project .project_list li.project_list_solo>p{
+  font-size: 0.8rem;
+  font-weight: lighter;
+  padding-left: 20px;
+  padding-top: 20px;
+}
 
+.project .project_list li.project_list_solo .project_contents{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.project .project_list li.project_list_solo .project_contents .project_left{
+  width: 50%;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  gap :20px;
+  justify-content: space-around;
+  align-items: center;
+}
+.project .project_list li.project_list_solo .project_contents .project_left h3{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.project .project_list li.project_list_solo .project_contents .project_left .project_left_top p{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.project .project_list li.project_list_solo .project_contents .project_left .project_left_bottom{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.project .project_list li.project_list_solo .project_contents .project_left .project_left_bottom p{
+  font-weight: lighter;
+}
+.project .project_list li.project_list_solo .project_contents .project_left ul.project_button{
+  display: flex;
+  gap: 20px;
+}
+.project .project_list li.project_list_solo .project_contents .project_left ul.project_button li{
+  width: 160px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  border: 1px solid #fafafa;
+  border-radius: 50px;
+}
+.project .project_list li.project_list_solo .project_contents .project_right{
+  width: 632px;
+  height: 420px;
+
+}
+.project .project_list li.project_list_solo .project_contents .project_right img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* merit */
 
