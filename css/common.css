@@ -10,11 +10,15 @@
     --pretendard :'Pretendard'
 }
 
+body{
+        overflow-x: hidden;
+}
 .wrap{
     width: 100%;
     font-family: var(--pretendard);
     background-image: url(../img/backgroundimg.png);
-    overflow: hidden;
+    /* overflow: hidden; */
+
 }
 
 
