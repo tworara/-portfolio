@@ -4,6 +4,38 @@ $(function () {
 
 
 
+ $(window).on('scroll', function () {
+  let scrollPos = $(window).scrollTop();
+
+  $('section').each(function () {
+    let sectionTop = $(this).offset().top - 100; // GNB 높이 여유
+    let sectionBottom = sectionTop + $(this).outerHeight();
+    let id = $(this).attr('id');
+
+    if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
+      $('.gnb li').removeClass('active');
+      $('.gnb li a[href="#' + id + '"]').parent().addClass('active');
+    }
+  });
+}); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   /* info 스크롤 */
 

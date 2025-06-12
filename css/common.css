@@ -53,8 +53,12 @@ header ul.gnb li{
 }
 
 header ul.gnb li:hover{
-    color: aqua;
+    color: #55C6FF;
     transition: 0.7s;
 }
 
+.gnb li.active a {
+  color: aqua;
+  
+}
 
