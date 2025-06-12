@@ -90,19 +90,13 @@ $(function () {
   /* merit cusor */
 
 
- /*  $(document).on('mousemove', function (e) {
-    $('.merit_cursor').css({
-      left: e.clientX,
-      top: e.clientY
-    });
-  }); */
 
 
-  document.addEventListener('mousemove', function (e) {
+ /*  document.addEventListener('mousemove', function (e) {
     const motionImg = document.querySelector('.merit_cursor');
     motionImg.style.top = `${e.clientY}px`;
     motionImg.style.left = `${e.clientX}px`;
-  });
+  }); */
 
 
 

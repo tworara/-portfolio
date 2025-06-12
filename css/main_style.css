@@ -448,7 +448,7 @@
   font-family: var(--pretendard);
 }
 
-
+/* 
 .merit_cursor {
   width: 50px;
   height: 50px;
@@ -456,18 +456,14 @@
   background-color: #55C6FF;
   text-align: center;
   line-height: 50px;
-
   position: sticky;
   top: 0;
   left: 0;
   transform: translate(-50%, -50%);
-  /* 가운데 정렬 */
   pointer-events: none;
-  /* 클릭 방지 */
   z-index: 9999;
 
-  
-}
+} */
 
 
 
