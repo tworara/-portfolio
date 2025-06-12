@@ -50,4 +50,9 @@ header ul.gnb li{
     text-align: center;
 }
 
+header ul.gnb li:hover{
+    color: aqua;
+    transition: 0.7s;
+}
+
 

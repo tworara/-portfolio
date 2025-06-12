@@ -11,7 +11,7 @@
   padding: 200px;
   scroll-behavior: smooth;
 
- 
+
 
 }
 
@@ -57,8 +57,8 @@
   position: relative;
   display: flex;
   /* background-image: url(../img/info1_line.png); */
-    overflow: hidden;
-  
+  overflow: hidden;
+
 
 }
 
@@ -88,7 +88,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   z-index: 100;
 }
 
@@ -128,63 +127,78 @@
 
 }
 
+
+
 /* project */
 
+
 .project {
-  width: 100%;
+  width: 500vw;
   height: 100vh;
+  position: relative;
   display: flex;
-  align-items: center;
-}
-
-.project .project_list {
-  display: flex;
-  gap: 20px;
+  overflow: hidden;
   margin-left: 50px;
+  gap: 20px;
+  align-items: center;
+
 }
 
-.project_list_solo {
+.project_list {
   width: 1250px;
   height: 760px;
-  background-color: #55C6FF;
   border-radius: 10px;
 }
 
-ul.project_list li.kbo {
+
+
+.project1,
+.project2,
+.project3,
+.project4 {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+
+
+.project .kbo {
   background-color: #232E47;
   color: #fafafa;
 }
 
-ul.project_list li.lamuse {
+.project .lamuse {
   background-color: #1a1a1a;
   color: #fafafa;
 }
 
-ul.project_list li.fan {
+.project .fan {
   color: #fafafa;
   background-color: #364732;
 }
 
-ul.project_list li.ontour {
+.project .ontour {
   background-color: #920F0F;
   color: #fafafa;
 }
 
-.project .project_list li.project_list_solo>p {
+.project .project_list>p {
   font-size: 0.8rem;
   font-weight: lighter;
   padding-left: 20px;
   padding-top: 20px;
 }
 
-.project .project_list li.project_list_solo .project_contents {
+.project .project_contents {
   display: flex;
   width: 100%;
   height: 100%;
   align-items: center;
 }
 
-.project .project_list li.project_list_solo .project_contents .project_left {
+.project .project_list .project_contents .project_left {
   width: 50%;
   height: 420px;
   display: flex;
@@ -194,55 +208,68 @@ ul.project_list li.ontour {
   align-items: center;
 }
 
-.project .project_list li.project_list_solo .project_contents .project_left h3 {
+.project .project_list .project_contents .project_left h3 {
   font-size: 3rem;
   font-weight: bold;
 }
 
-.project .project_list li.project_list_solo .project_contents .project_left .project_left_top p {
+.project .project_list .project_contents .project_left .project_left_top p {
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.project .project_list li.project_list_solo .project_contents .project_left .project_left_bottom {
+.project .project_list .project_contents .project_left .project_left_bottom {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.project .project_list li.project_list_solo .project_contents .project_left .project_left_bottom p {
+.project .project_contents .project_left .project_left_bottom p {
   font-weight: lighter;
 }
 
-.project .project_list li.project_list_solo .project_contents .project_left ul.project_button {
+.project .project_list .project_contents .project_left ul.project_button {
   display: flex;
   gap: 20px;
+  
 }
 
-.project .project_list li.project_list_solo .project_contents .project_left ul.project_button li {
+
+.project .project_list .project_contents .project_left ul.project_button li {
   width: 160px;
   height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
   font-size: 1.2rem;
   font-weight: lighter;
   border: 1px solid #fafafa;
   border-radius: 50px;
 }
 
-.project .project_list li.project_list_solo .project_contents .project_right {
+.project .project_list .project_contents .project_left ul.project_button li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project .project_list .project_contents .project_right {
   width: 632px;
   height: 420px;
 
 }
 
-.project .project_list li.project_list_solo .project_contents .project_right img {
+.project .project_list .project_contents .project_right img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
+
+
+
 
 /* merit */
 

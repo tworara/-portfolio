@@ -30,123 +30,88 @@ $(function () {
     duration: 1,
     ease: 'none',
   }, '+=0.6')
-  .to('.skill_gr3', {
-    backgroundSize: '100% ',
-    duration: 1,
-    ease: 'none',
-  }, '+=1.2')
-  .to('.skill_gr4', {
-    backgroundSize: '100%',
-    duration: 1,
-    ease: 'none',
-  }, '+=1.8')
+    .to('.skill_gr3', {
+      backgroundSize: '100% ',
+      duration: 1,
+      ease: 'none',
+    }, '+=1.2')
+    .to('.skill_gr4', {
+      backgroundSize: '100%',
+      duration: 1,
+      ease: 'none',
+    }, '+=1.8')
 
 
-/* project swiper */
-
-
-let projectSwiper = new Swiper(".projectSwiper", {
-      slidesPerView: "auto",
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-
-
-
-/* merit on click */
-
-/* $('.merit_list_section .merit_list .merit_list_happy').click(function(){
-  $('.merit_view .merit_view_left .view_happy').toggleClass('on')
-})
-
-$('.merit_list_section .merit_list .merit_list_res').click(function(){
-  $('.merit_view .merit_view_left .view_res').toggleClass('on')
-})
-
-$('.merit_list_section .merit_list .view_smile').click(function(){
-  $('.merit_view .merit_view_left .view_smile').toggleClass('on')
-})
-
-$('.merit_list_section .merit_list .merit_list_detail').click(function(){
-  $('.merit_view .merit_view_left .view_detail').toggleClass('on')
-}) */
+  /* project scroll */
 
 
 
 
+  const projecthorizontal = document.querySelector('.projecthorizontal');
+  const projectsections = gsap.utils.toArray('.projecthorizontal>section');
+  let projectani = [];
+  const scrollTweens = gsap.to(projectsections, {
+    xPercent: -100 * (projectsections.length - 1), //전체 섹션 수만큼 왼쪽으로 밀기
+    ease: 'none', //부드럽게 넘기지 않고 스크롤에 따라 반응
+    scrollTrigger: {
+      trigger: projecthorizontal,
+      start: 'top top', //스크롤이 맨 위에 닿을 때 시작
+      end: () => "+=" + ((projecthorizontal.offsetWidth - innerWidth)*0.6), //스크롤 끝나는 위치 계산
+      pin: true, //해당 부분에서 화면을 고정해서 보여줌
+      scrub: 1, //스크롤에 따라 실시간으로 움직임
+      anticipatePin: 1, // 핀 고정 시 살짝 미리 준비해서 부드럽게
+      invalidateOnRefresh: true, // 새로고침하면 위치 다시 계산해줌
+    }
+  })
 
 
-/* $('.merit_list_section .merit_list .merit_list_happy').click(function () {
-  $('.merit_view .merit_view_left li').removeClass('on'); // 다른 애들 다 꺼
-  $('.merit_view .merit_view_left .view_happy').addClass('on'); // 이건 켜
-});
-
-$('.merit_list_section .merit_list .merit_list_res').click(function () {
-  $('.merit_view .merit_view_left li').removeClass('on');
-  $('.merit_view .merit_view_left .view_res').addClass('on');
-});
-
-$('.merit_list_section .merit_list .merit_list_smile').click(function () {
-  $('.merit_view .merit_view_left li').removeClass('on');
-  $('.merit_view .merit_view_left .view_smile').addClass('on');
-});
-
-$('.merit_list_section .merit_list .merit_list_detail').click(function () {
-  $('.merit_view .merit_view_left li').removeClass('on');
-  $('.merit_view .merit_view_left .view_detail').addClass('on');
-}); */
-
+  /* merit on click */
 
 
 
 
+  $('.merit_list_section .merit_list .merit_list_happy').click(function () {
+    const target = $('.merit_view .merit_view_left .view_happy');
 
+    // 이미 켜져 있다면 꺼주기
+    if (target.hasClass('on')) {
+      target.removeClass('on');
+    } else {
+      // 다른 거 다 끄고 이거만 켜기
+      $('.merit_view .merit_view_left li').removeClass('on');
+      target.addClass('on');
+    }
+  });
 
-$('.merit_list_section .merit_list .merit_list_happy').click(function () {
-  const target = $('.merit_view .merit_view_left .view_happy');
+  $('.merit_list_section .merit_list .merit_list_res').click(function () {
+    const target = $('.merit_view .merit_view_left .view_res');
+    if (target.hasClass('on')) {
+      target.removeClass('on');
+    } else {
+      $('.merit_view .merit_view_left li').removeClass('on');
+      target.addClass('on');
+    }
+  });
 
-  // 이미 켜져 있다면 꺼주기
-  if (target.hasClass('on')) {
-    target.removeClass('on');
-  } else {
-    // 다른 거 다 끄고 이거만 켜기
-    $('.merit_view .merit_view_left li').removeClass('on');
-    target.addClass('on');
-  }
-});
+  $('.merit_list_section .merit_list .merit_list_smile').click(function () {
+    const target = $('.merit_view .merit_view_left .view_smile');
+    if (target.hasClass('on')) {
+      target.removeClass('on');
+    } else {
+      $('.merit_view .merit_view_left li').removeClass('on');
+      target.addClass('on');
+    }
+  });
 
-$('.merit_list_section .merit_list .merit_list_res').click(function () {
-  const target = $('.merit_view .merit_view_left .view_res');
-  if (target.hasClass('on')) {
-    target.removeClass('on');
-  } else {
-    $('.merit_view .merit_view_left li').removeClass('on');
-    target.addClass('on');
-  }
-});
-
-$('.merit_list_section .merit_list .merit_list_smile').click(function () {
-  const target = $('.merit_view .merit_view_left .view_smile');
-  if (target.hasClass('on')) {
-    target.removeClass('on');
-  } else {
-    $('.merit_view .merit_view_left li').removeClass('on');
-    target.addClass('on');
-  }
-});
-
-$('.merit_list_section .merit_list .merit_list_detail').click(function () {
-  const target = $('.merit_view .merit_view_left .view_detail');
-  if (target.hasClass('on')) {
-    target.removeClass('on');
-  } else {
-    $('.merit_view .merit_view_left li').removeClass('on');
-    target.addClass('on');
-  }
-});
+  $('.merit_list_section .merit_list .merit_list_detail').click(function () {
+    const target = $('.merit_view .merit_view_left .view_detail');
+    if (target.hasClass('on')) {
+      target.removeClass('on');
+    } else {
+      $('.merit_view .merit_view_left li').removeClass('on');
+      target.addClass('on');
+    }
+  });
 
 
 
@@ -172,26 +137,26 @@ $('.merit_list_section .merit_list .merit_list_detail').click(function () {
     },
   });
 
-  
 
 
-/* design */
 
-const numberEl = document.querySelector('.design_left');
-const section = document.querySelectorAll('.design');
+  /* design */
 
-window.addEventListener('scroll', () => {
-  const center = window.innerHeight / 2;
+  const numberEl = document.querySelector('.design_left');
+  const section = document.querySelectorAll('.design');
 
-  section.forEach((section, index) => {
-    const rect = section.getBoundingClientRect();
+  window.addEventListener('scroll', () => {
+    const center = window.innerHeight / 2;
 
-    if (rect.top <= center && rect.bottom >= center) {
-      const displayNum = (index + 1).toString().padStart(2, '0');
-      numberEl.textContent = displayNum;
-    }
+    section.forEach((section, index) => {
+      const rect = section.getBoundingClientRect();
+
+      if (rect.top <= center && rect.bottom >= center) {
+        const displayNum = (index + 1).toString().padStart(2, '0');
+        numberEl.textContent = displayNum;
+      }
+    });
   });
-});
 
 
 
@@ -201,7 +166,7 @@ window.addEventListener('scroll', () => {
   })
 
 
-  
+
   /* info 가로스크롤 */
 
   const horizontal = document.querySelector('.horizontal');
