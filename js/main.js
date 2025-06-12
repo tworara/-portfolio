@@ -5,6 +5,24 @@ $(function () {
 
 
 
+  /* info 스크롤 */
+
+  const horizontal = document.querySelector('.horizontal');
+  const sections = gsap.utils.toArray('.horizontal>section');
+  let ani = [];
+  const scrollTween = gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1), //전체 섹션 수만큼 왼쪽으로 밀기
+    ease: 'none', //부드럽게 넘기지 않고 스크롤에 따라 반응
+    scrollTrigger: {
+      trigger: horizontal,
+      start: 'top top', //스크롤이 맨 위에 닿을 때 시작
+      end: () => "+=" + (horizontal.offsetWidth - innerWidth), //스크롤 끝나는 위치 계산
+      pin: true, //해당 부분에서 화면을 고정해서 보여줌
+      scrub: 1, //스크롤에 따라 실시간으로 움직임
+      anticipatePin: 1, // 핀 고정 시 살짝 미리 준비해서 부드럽게
+      invalidateOnRefresh: true, // 새로고침하면 위치 다시 계산해줌
+    }
+  })
 
 
 
@@ -87,16 +105,6 @@ $(function () {
   });
 
 
-  /* merit cusor */
-
-
-
-
- /*  document.addEventListener('mousemove', function (e) {
-    const motionImg = document.querySelector('.merit_cursor');
-    motionImg.style.top = `${e.clientY}px`;
-    motionImg.style.left = `${e.clientX}px`;
-  }); */
 
 
 
@@ -169,7 +177,29 @@ $(function () {
       depth: 0,
       modifier: 1,
       slideShadows: true,
-    },
+    }, on: {
+      init: function () {
+        $('.merit_view .merit_view_left .view_happy').addClass('on');
+      },
+      slideChange: function () {
+        $('.merit_view .merit_view_left li').removeClass('on');
+        const activeIndex = this.activeIndex;
+        switch (activeIndex) {
+          case 0:
+            $('.merit_view .merit_view_left .view_happy').addClass('on');
+            break;
+          case 1:
+            $('.merit_view .merit_view_left .view_res').addClass('on');
+            break;
+          case 2:
+            $('.merit_view .merit_view_left .view_smile').addClass('on');
+            break;
+          case 3:
+            $('.merit_view .merit_view_left .view_detail').addClass('on');
+            break;
+        }
+      }
+    }
   });
 
 
@@ -186,27 +216,17 @@ $(function () {
 
 
 
-  /* info 가로스크롤 */
-
-  const horizontal = document.querySelector('.horizontal');
-  const sections = gsap.utils.toArray('.horizontal>section');
-  let ani = [];
-  const scrollTween = gsap.to(sections, {
-    xPercent: -100 * (sections.length - 1), //전체 섹션 수만큼 왼쪽으로 밀기
-    ease: 'none', //부드럽게 넘기지 않고 스크롤에 따라 반응
-    scrollTrigger: {
-      trigger: horizontal,
-      start: 'top top', //스크롤이 맨 위에 닿을 때 시작
-      end: () => "+=" + (horizontal.offsetWidth - innerWidth), //스크롤 끝나는 위치 계산
-      pin: true, //해당 부분에서 화면을 고정해서 보여줌
-      scrub: 1, //스크롤에 따라 실시간으로 움직임
-      anticipatePin: 1, // 핀 고정 시 살짝 미리 준비해서 부드럽게
-      invalidateOnRefresh: true, // 새로고침하면 위치 다시 계산해줌
-    }
-  })
 
 
+  /* AOS.init(); */
 
-  AOS.init();
+
+  window.addEventListener('load', function () {
+    AOS.init({
+      once: true,
+      duration: 800,
+      delay: 100
+    });
+  });
 })
 
