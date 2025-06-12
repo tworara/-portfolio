@@ -56,13 +56,54 @@ $(function () {
     scrollTrigger: {
       trigger: projecthorizontal,
       start: 'top top', //스크롤이 맨 위에 닿을 때 시작
-      end: () => "+=" + ((projecthorizontal.offsetWidth - innerWidth)*0.6), //스크롤 끝나는 위치 계산
+      end: () => "+=" + (projecthorizontal.offsetWidth - innerWidth), //스크롤 끝나는 위치 계산
       pin: true, //해당 부분에서 화면을 고정해서 보여줌
       scrub: 1, //스크롤에 따라 실시간으로 움직임
       anticipatePin: 1, // 핀 고정 시 살짝 미리 준비해서 부드럽게
       invalidateOnRefresh: true, // 새로고침하면 위치 다시 계산해줌
     }
   })
+
+
+
+
+
+  /* design */
+
+  const numberEl = document.querySelector('.design_left');
+  const section = document.querySelectorAll('.design');
+
+  window.addEventListener('scroll', () => {
+    const center = window.innerHeight / 2;
+
+    section.forEach((section, index) => {
+      const rect = section.getBoundingClientRect();
+
+      if (rect.top <= center && rect.bottom >= center) {
+        const displayNum = (index + 1).toString().padStart(2, '0');
+        numberEl.textContent = displayNum;
+      }
+    });
+  });
+
+
+  /* merit cusor */
+
+
+ /*  $(document).on('mousemove', function (e) {
+    $('.merit_cursor').css({
+      left: e.clientX,
+      top: e.clientY
+    });
+  }); */
+
+
+  document.addEventListener('mousemove', function (e) {
+    const motionImg = document.querySelector('.merit_cursor');
+    motionImg.style.top = `${e.clientY}px`;
+    motionImg.style.left = `${e.clientX}px`;
+  });
+
 
 
   /* merit on click */
@@ -140,23 +181,7 @@ $(function () {
 
 
 
-  /* design */
 
-  const numberEl = document.querySelector('.design_left');
-  const section = document.querySelectorAll('.design');
-
-  window.addEventListener('scroll', () => {
-    const center = window.innerHeight / 2;
-
-    section.forEach((section, index) => {
-      const rect = section.getBoundingClientRect();
-
-      if (rect.top <= center && rect.bottom >= center) {
-        const displayNum = (index + 1).toString().padStart(2, '0');
-        numberEl.textContent = displayNum;
-      }
-    });
-  });
 
 
 

@@ -10,6 +10,8 @@
     --pretendard :'Pretendard'
 }
 
+
+
 body{
         overflow-x: hidden;
 }
@@ -25,7 +27,7 @@ body{
 header{
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 80px;
     font-family: var(--main_font);
     background: rgba(17, 17, 17, 0.50);
     backdrop-filter: blur(2px);
