@@ -462,7 +462,11 @@
   align-items: center;
   border-top: 1px solid #888;
 }
-
+.design_right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .design_right h2 {
   font-size: 4rem;
   width: 100%;
@@ -475,6 +479,7 @@
   display: flex;
   justify-content: left;
   width: 100%;
+  line-height: 34px;
 }
 
 .design_right span {
