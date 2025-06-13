@@ -62,16 +62,16 @@ header .fix{
     position: fixed; right: -100%; top: 0;
     display: flex;
     transition: .6s;
-    background: var(--main-rpink);
+    background: #C74C1C;
 }
 header.on .fix{
     right: 0;
 }
 header .fix .img_box{
     flex: 1;
-    background: url(../asset/img/fix_imgbox_bg.jpg) center/cover;
+    background: url(../asset/img/gnb_img.png) center/cover;
     font-size: 2rem;
-    color: var(--main-yellow-l);
+    color: #C74C1C;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,7 +80,7 @@ header .fix .img_box{
     gap: 20px;
 }
 header .fix .img_box p{
-    color: #333;
+    color: #222;
     font-family: var(--Playfair);
     font-size: 3.7rem;
     font-weight: 600;
@@ -88,7 +88,7 @@ header .fix .img_box p{
 }
 .fix .gnb{
     flex: 1;
-    background: var(--main-rpink);
+    background: #C74C1C;
     color: var(--w-color);
     display: flex;
     justify-content: center;
