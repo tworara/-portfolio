@@ -541,11 +541,15 @@
   padding: 20px;
   cursor: pointer;
   border-bottom: 1px solid #000;
+  
+}
+.contact_right ul.contact_list>li i{
+  color: #444;
 }
 
-.contact_right ul.contact_list>li:hover ul.contact_list_plus {
+/* .contact_right ul.contact_list>li:hover ul.contact_list_plus {
   display: block;
-}
+} */
 
 .contact_right ul.contact_list>li ul.contact_list_plus {
   display: none;
