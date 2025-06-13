@@ -285,14 +285,16 @@
 }
 
 .coding .coding_tit {
-  height: 10vh;
+  height: 20vh;
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
   font-weight: bold;
 }
+
 
 .coding .coding_con {
   padding-top: 5vh;
@@ -336,7 +338,8 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   padding: 100px;
   gap: 20px;
   font-size: 1.2rem;
@@ -624,7 +627,7 @@
 }
 
 .contact_right ul.contact_list>li i {
-  color: #444;
+  /* color: #444; */
 }
 
 /* .contact_right ul.contact_list>li:hover ul.contact_list_plus {
