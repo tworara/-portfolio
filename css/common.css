@@ -53,10 +53,10 @@ header nav ul.gnb {
     height: 60%;
     display: flex;
     flex-direction: column;
-    background-color: rgba(71, 151, 255, 0.7);
+    /* background-color: rgba(71, 151, 255, 0.7);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-radius: 50px;
+    border-radius: 50px; */
 }
 
 header nav ul.gnb li {
@@ -67,9 +67,9 @@ header nav ul.gnb li {
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    color: var(--main_white);
+    color: var(--main_navy);
 }
 
 header nav ul.gnb li.active {
-    color: aqua;
+    color: lightblue;
 }
