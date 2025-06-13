@@ -4,23 +4,64 @@ $(function () {
 
 
 
-  $(window).on('scroll', function () {
-    let scrollPos = $(window).scrollTop();
 
-    $('section').each(function () {
-      let sectionTop = $(this).offset().top - 100; // GNB 높이 여유
-      let sectionBottom = sectionTop + $(this).outerHeight();
-      let id = $(this).attr('id');
 
-      if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
-        $('.gnb li').removeClass('active');
-        $('.gnb li a[href="#' + id + '"]').parent().addClass('active');
+
+
+  function setActiveNav(id) {
+    $('.gnb li').removeClass('active');
+    $('.gnb li a[href="#' + id + '"]').parent().addClass('active');
+  }
+
+  function isInViewport($el) {
+    const rect = $el[0].getBoundingClientRect();
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+    return rect.top <= vh / 2 && rect.bottom >= vh / 2;
+  }
+
+  function updateGnbActive() {
+    let matched = false;
+
+    // 세로 섹션 (project 제외)
+    $('section[id], .design_list, .merit, .contact').each(function () {
+      const $el = $(this);
+      const id = $el.attr('id');
+      if (isInViewport($el)) {
+        setActiveNav(id);
+        matched = true;
+        return false; // 루프 중단
       }
     });
+
+    // 가로 스크롤 info
+    if (!matched && isInViewport($('.horizontal'))) {
+      setActiveNav('info');
+      matched = true;
+    }
+
+    // 가로 스크롤 project
+    if (!matched && isInViewport($('.project_section'))) {
+      setActiveNav('project');
+    }
+  }
+
+  $(window).on('scroll', updateGnbActive);
+
+
+
+
+
+
+
+  $('.gnb a').on('click', function (e) {
+    e.preventDefault(); // a태그 기본 동작 막기
+    const targetId = $(this).attr('href');
+    const targetEl = document.querySelector(targetId);
+
+    if (targetEl) {
+      targetEl.scrollIntoView({ behavior: 'smooth' });
+    }
   });
-
-
-
 
 
 

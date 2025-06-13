@@ -132,10 +132,10 @@
   position: relative;
   display: flex;
   overflow: hidden;
-  margin-left: 50px;
+  margin-left: 100px;
   gap: 20px;
   align-items: center;
-  padding-left: 150px;
+  padding-left: 200px;
 }
 
 .project_list {
