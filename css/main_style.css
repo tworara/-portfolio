@@ -464,6 +464,21 @@
 
 }
 
+.merit .merit_view .merit_view_left img {
+  position: absolute;
+}
+
+.merit .merit_view .merit_view_left img.positionimg1 {
+
+  left: 20px;
+  top: 20px;
+}
+
+.merit .merit_view .merit_view_left img.positionimg2 {
+  bottom: 40px;
+  right: 40px;
+}
+
 
 .merit_view .merit_view_left h3 {
   font-size: 3.5rem;
@@ -652,13 +667,3 @@
   font-weight: 300;
   padding: 20px 0;
 }
-
-
-
-
-
-
-
-
-
-
