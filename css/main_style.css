@@ -13,7 +13,7 @@
 
 }
 
-.info_6{
+.info_6 {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -78,7 +78,7 @@
 
 .info_slide span {
   font-weight: 600;
-} 
+}
 
 
 
@@ -277,6 +277,81 @@
 
 
 
+/* coding */
+
+.coding {
+  height: auto;
+  font-family: var(--pretendard);
+}
+
+.coding .coding_tit {
+  height: 10vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.coding .coding_con {
+  padding-top: 5vh;
+  position: relative;
+  z-index: 1;
+  height: 120vh;
+}
+
+.coding ul {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  perspective: 1500px;
+}
+
+.coding ul li {
+  margin-bottom: 50px;
+  width: 1200px;
+  height: 500px;
+  border-radius: 50px;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  left: 50%;
+  margin-left: -600px;
+  overflow: hidden;
+}
+
+.coding ul li.coding_1 {
+  background-image: url(../img/chahong_mockup.png);
+  top: 0;
+}
+
+.coding ul li.coding_2 {
+  background-image: url(../img/cosmetic_mockup.png);
+  top: 20vh;
+}
+
+.coding ul li>a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  padding: 100px;
+  gap: 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+}
+
+.coding ul li a h3 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+
+
+
 
 /* design */
 
@@ -383,7 +458,7 @@
   background-image: url(../img/backgroundimg.png);
   border: 3px solid #000;
   position: relative;
-  
+
 }
 
 
@@ -391,7 +466,7 @@
   font-size: 3.5rem;
   color: var(--main_navy_deep);
   font-weight: bolder;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -545,9 +620,10 @@
   padding: 20px;
   cursor: pointer;
   border-bottom: 1px solid #000;
-  
+
 }
-.contact_right ul.contact_list>li i{
+
+.contact_right ul.contact_list>li i {
   color: #444;
 }
 
@@ -573,3 +649,13 @@
   font-weight: 300;
   padding: 20px 0;
 }
+
+
+
+
+
+
+
+
+
+
