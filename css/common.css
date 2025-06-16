@@ -69,5 +69,6 @@ header nav ul.gnb li {
 }
 
 header nav ul.gnb li.active {
-    color: rgb(230, 218, 117);
+    color: rgb(255, 205, 98);
+    
 }

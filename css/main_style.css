@@ -254,7 +254,8 @@
 }
 
 .project .project_list .project_contents .project_left ul.project_button li:hover {
-  background-color: rgba(230, 218, 117, 0.5);
+  background-color: rgba(255, 218, 139, 0.6);
+
 
 }
 
@@ -339,7 +340,8 @@
   top: 60vh;
   color: #fafafa;
 }
-.coding ul li.coding_2:hover{
+
+.coding ul li.coding_2:hover {
   color: #1a1a1a;
 }
 
@@ -360,7 +362,7 @@
 }
 
 .coding ul li>a:hover {
-  background-color: rgba(230, 218, 117, 0.8);
+  background-color: rgba(230, 209, 117, 0.8);
 }
 
 .coding ul li a h3 {
@@ -391,7 +393,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(230, 218, 117);
+  color: rgb(255, 205, 98);
+
   position: sticky;
   top: 0;
   left: 0;
