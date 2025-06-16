@@ -253,6 +253,11 @@
   border-radius: 50px;
 }
 
+.project .project_list .project_contents .project_left ul.project_button li:hover {
+  background-color: rgba(230, 218, 117, 0.5);
+
+}
+
 .project .project_list .project_contents .project_left ul.project_button li a {
   display: block;
   width: 100%;
@@ -324,13 +329,18 @@
 }
 
 .coding ul li.coding_1 {
-  background-image: url(../img/chahong_mockup.png);
+  background-image: url(../img/chahong.png);
   top: 0;
+  color: #1a1a1a;
 }
 
 .coding ul li.coding_2 {
-  background-image: url(../img/cosmetic_mockupimg.png);
+  background-image: url(../img/sulhwasoo.png);
   top: 60vh;
+  color: #fafafa;
+}
+.coding ul li.coding_2:hover{
+  color: #1a1a1a;
 }
 
 .coding ul li>a {
@@ -343,8 +353,14 @@
   padding: 100px;
   gap: 20px;
   font-size: 1.2rem;
-  color: #fff;
+
   /* background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)); */
+
+
+}
+
+.coding ul li>a:hover {
+  background-color: rgba(230, 218, 117, 0.5);
 }
 
 .coding ul li a h3 {
@@ -375,7 +391,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #888;
+  color: rgb(230, 218, 117);
   position: sticky;
   top: 0;
   left: 0;
@@ -615,6 +631,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--main_navy_deep);
 }
 
 .contact_left h2 {
