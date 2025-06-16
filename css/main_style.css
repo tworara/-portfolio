@@ -300,7 +300,7 @@
   padding-top: 5vh;
   position: relative;
   z-index: 1;
-  height: 120vh;
+  height: 150vh;
 }
 
 .coding ul {
@@ -330,7 +330,7 @@
 
 .coding ul li.coding_2 {
   background-image: url(../img/cosmetic_mockupimg.png);
-  top: 20vh;
+  top: 50vh;
 }
 
 .coding ul li>a {
@@ -344,7 +344,7 @@
   gap: 20px;
   font-size: 1.2rem;
   color: #fff;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+  /* background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)); */
 }
 
 .coding ul li a h3 {
