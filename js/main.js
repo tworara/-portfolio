@@ -157,22 +157,22 @@ $(function () {
 
 
 
-    //coding 섹션 애니메이션
+  //coding 섹션 애니메이션
   const codingContainer = document.querySelector('.coding .coding_con');
   const cards = gsap.utils.toArray('.coding ul li');
 
   //전체 컨테이너 타임라인 생성
-gsap.timeline({
+  gsap.timeline({
     scrollTrigger: {
-        trigger: codingContainer,
-        start: 'top 20%',//화면의 위에서 20%지점에 올 때 시작
-        end: () => "+=" + (cards.length * 380), //카드 수 * 380만큼 더 내려가서 끝남
-        scrub: 1, //스크롤을 움직이면 애니메이션도 같이 부드럽게 따라가게
-        invalidateOnRefresh: true,
-        // 화면이 새로고침될 때 카드들의 위치를 다시 계산해줌
+      trigger: codingContainer,
+      start: 'top 20%',//화면의 위에서 20%지점에 올 때 시작
+      end: () => "+=" + (cards.length * 380), //카드 수 * 380만큼 더 내려가서 끝남
+      scrub: 1, //스크롤을 움직이면 애니메이션도 같이 부드럽게 따라가게
+      invalidateOnRefresh: true,
+      // 화면이 새로고침될 때 카드들의 위치를 다시 계산해줌
     }
-}).fromTo(cards, { y: 300, z: 200, opacity: 0.8 }, { y: 0, z: 0, duration: 1, ease: "power2.out", stagger: 1, opacity: 1 }).to(cards,{y:-300,z:-200,skewY:5,duration:1,ease: "power2.in", stagger: 1},'+=0.5') //앞 애니메이션 끝나고 0.5초 쉬었다가 등장
-//카드 하나씩 1초 간격으로 차례차례 등장
+  }).fromTo(cards, { y: 300, z: 200, opacity: 0.8 }, { y: 0, z: 0, duration: 1, ease: "power2.out", stagger: 1, opacity: 1 }).to(cards, { y: -300, z: -200, skewY: 5, duration: 1, ease: "power2.in", stagger: 1 }, '+=0.5') //앞 애니메이션 끝나고 0.5초 쉬었다가 등장
+  //카드 하나씩 1초 간격으로 차례차례 등장
 
 
 
@@ -303,9 +303,24 @@ gsap.timeline({
 
 
   /* contact 마우스 클릭 이벤트 */
-  $('.contact_list> li').click(function () {
+  $('.contact_list>li').click(function () {
     $(this).toggleClass('on')
   })
+
+
+
+  const textEl = document.getElementById('textToCopy');
+
+  textEl.addEventListener('click', () => {
+    const text = textEl.textContent;
+
+    // 클립보드에 복사
+    navigator.clipboard.writeText(text).then(() => {
+      alert('복사되었습니다!');
+    }).catch(err => {
+      alert('복사 실패: ' + err);
+    });
+  });
 
 
 
