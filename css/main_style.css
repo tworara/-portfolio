@@ -301,6 +301,10 @@
   font-weight: bold;
 }
 
+.coding .coding_tit::selection {
+  color: rgb(255, 205, 98);
+}
+
 
 .coding .coding_con {
   padding-top: 5vh;
@@ -386,6 +390,8 @@
 
 
 
+
+
 .design_left {
   width: 30%;
   height: 100vh;
@@ -427,6 +433,10 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.design_right::selection {
+  color: rgb(255, 205, 98);
 }
 
 .design_right h2 {
@@ -487,15 +497,32 @@
   position: absolute;
 }
 
-.merit .merit_view .merit_view_left img.positionimg1 {
+.merit .merit_view .merit_view_left img.positon_img1{
+  width: 150px;
+  height: 150px;
+  right: 20px;
+  top: 30px;
+}
+.merit .merit_view .merit_view_left img.positon_img2{
+   width: 150px;
+  height: 150px;
+  left: 10px;
+  bottom: 50px;
+}
 
+
+.merit .merit_view .merit_view_left img.positionimg1,.merit .merit_view .merit_view_left img.positionimg3,.merit .merit_view .merit_view_left img.positionimg5, .merit .merit_view .merit_view_left img.positionimg7, .merit .merit_view .merit_view_left img.positionimg9 {
+  width: 200px;
+  height: 200px;
   left: 20px;
   top: 20px;
 }
 
-.merit .merit_view .merit_view_left img.positionimg2 {
+.merit .merit_view .merit_view_left img.positionimg2,.merit .merit_view .merit_view_left img.positionimg4, .merit .merit_view .merit_view_left img.positionimg6, .merit .merit_view .merit_view_left img.positionimg8, .merit .merit_view .merit_view_left img.positionimg10 {
+  width: 200px;
+  height: 200px;
   bottom: 40px;
-  right: 40px;
+  right: 20px;
 }
 
 
@@ -699,14 +726,13 @@
   color: rgb(255, 205, 98);
 }
 
-.contact_list li:nth-child(2) .contact_list_plus li a{
+.contact_list li:nth-child(2) .contact_list_plus li a {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-.contact_list li:nth-child(1) .contact_list_plus li{
+.contact_list li:nth-child(1) .contact_list_plus li {
   cursor: pointer;
   user-select: all
-  
 }
