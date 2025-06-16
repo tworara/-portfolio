@@ -230,19 +230,19 @@ a.more .plus::after{
     background-size: cover;
     background-position: center center;
     filter: saturate(70%) contrast(80%); /* 100% 기본값*/
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 .our_business .list ul li:hover{
     filter: saturate(100%) contrast(120%); /* contrast 진하기 */
 }
 .our_business .list ul li:nth-child(1){
-    background-image: url(../asset/img/bg1.png);
+    background-image: url(../asset/img/bbg1.png);
 }
 .our_business .list ul li:nth-child(2){
-    background-image: url(../asset/img/bg2.png);
+    background-image: url(../asset/img/bbg2.png);
 }
 .our_business .list ul li:nth-child(3){
-    background-image: url(../asset/img/bg3.png);
+    background-image: url(../asset/img/bbg3.png);
 }
 .our_business .list ul li a{
     display: flex;
